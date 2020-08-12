@@ -1,0 +1,319 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+/***************
+    GENERAL
+****************/
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+
+button{
+    padding: 0.5em;
+    color: hsl(180, 85%, 92%);
+    width: 10em;
+    border: 5px solid hsl(176, 58%, 56%);
+    border-radius: 100px;
+    font-size: 1em;
+    background-color:hsl(176, 58%, 56%);
+    outline: none;
+    cursor: pointer;
+}
+
+/***************
+    HEADER
+****************/
+
+header{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+   text-decoration: none; 
+   color: hsl(257, 7%, 63%);
+}
+
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 0.5em 0 0 2em;
+}
+
+
+
+li:nth-child(4){
+    position: absolute;
+    left: 80%;
+}
+
+li:nth-child(5){
+    position: absolute;
+    left: 87%;
+}
+
+nav>ul>li>a:hover {
+    color: hsl(260, 8%, 14%);
+}
+
+li:nth-child(4)>a:hover, li:nth-child(5)>a:hover{
+    color:#ffffff;
+    background-color: hsl(176, 58%, 56%);
+    border: 5px solid hsl(176, 58%, 56%);
+    border-radius: 100px;
+    padding: 0.1em 1em;
+}
+
+#wrapper{
+    
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#header {
+    display: flex;
+}
+
+p{
+    color: hsl(257, 7%, 63%);
+}
+
+
+/***************
+    Container 1
+****************/
+.container-1{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    
+}
+
+.left > h1{
+    font-size: 4em;
+    font-weight: 700;
+    color: hsl(256, 10%, 21%);
+}
+
+.left > p {
+    margin-top: -2em;
+    font-size: 1.3em;
+    
+}
+
+/***************
+    Container-2
+****************/
+.middle1{
+    background-color:hsl(230, 25%, 95%);
+    margin-top: 10%;
+}
+
+.container-2{ 
+     margin:0 5% 0 5%;
+     position: absolute;
+     top: 100%;
+     width: 90%;
+     border: 1px solid hsl(257, 27%, 26%);
+     border-radius: 10px;
+     background-color: hsl(257, 27%, 26%);
+     background-image: url('../images/bg-shorten-desktop.svg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+    }
+    
+
+#form1{
+    margin:5%;
+}
+
+input{
+    width: 70%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+#btn{
+    width: 20%;
+    border: 5px solid hsl(176, 58%, 56%);
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+small{
+    display: block;
+    padding-top: 0.5em;
+    visibility: hidden;
+}
+
+
+/***************
+    Container-3
+****************/
+
+.middle2{
+    background-color: hsl(230, 25%, 95%);
+}
+
+.container-3{
+    background-color: hsl(230, 25%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.about{
+    margin: 12%;
+    text-align: center;
+}
+
+.about > h2{
+    font-size: 2em;
+    color: hsl(256, 10%, 21%);
+}
+
+.about>p{
+    font-size: 1em;
+    width: 80%;
+    margin: -1em auto;
+    
+}
+
+.container-4{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.card{
+    display: grid;
+    width: 95%;
+    grid-template: 1fr/1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin-top: -12%;
+}
+
+
+
+.card-1, .card-2, .card-3{
+    border: 5px solid hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 1em;
+    padding-top: 1em;
+    margin-bottom: 50%;
+}
+
+.card-2{
+    position: relative;
+    top: 10%;
+    
+}
+
+.card-3{
+    position: relative;
+    top: 20%;
+    
+}
+
+.card > div > img{
+    position: relative;
+    bottom: 3.1em;
+    padding: 1em;
+    background-color: hsl(257, 27%, 26%);
+    border: 1px solid hsl(257, 27%, 26%);
+    border-radius: 50%;
+}
+
+/***
+.hr1{
+    position: absolute;
+    left: 34.5%;
+    top: 180%;
+    border-top: 5px solid hsl(176, 58%, 56%);
+    width: 2em;
+}
+
+.hr2{
+    position: absolute;
+    right: 31.9%;
+    top: 180%;
+    border-top: 5px solid hsl(176, 58%, 56%);
+    width: 2em;
+}
+****/
+
+
+/***************
+    Container 5
+****************/
+.container-5{
+    background-color:hsl(257, 27%, 26%);
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-size: cover;
+}
+
+.boost{
+    padding: 5%;
+    text-align: center;
+}
+
+.boost > h2{
+    font-size: 2em;
+    color: #ffffff;
+}
+/***************
+    Footer
+****************/
+footer{
+    background-color: hsl(260, 8%, 14%);
+}
+
+.footer-container{
+    margin-left: 5%;
+    display: grid;
+    grid-template: 1fr/2fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-image{
+    margin-top: 3em;
+}
+
+.footer-image > img {
+    filter: brightness(0) invert(1);
+}
+
+.column-1, .column-2, .column-3{
+    margin-top: 2em;
+}
+
+h4{
+    color: #ffffff;
+}
+
+footer > .footer-container > div > p {
+    
+}
+
+.social-icons{
+    margin-top: 3.5em;
+}

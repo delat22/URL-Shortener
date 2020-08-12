@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -15,19 +16,24 @@
   </style>
 </head>
 <body>
+  <!--
   <div id="wrapper">
+    -->
     <!--Headers and Nav-->
     <header>
-      <img src="images/logo.svg" alt="Shortly-logo">
-      <nav>
-        <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Resources</li>
-          <li>Login</li>
-          <li>Sign Up</li>
-        </ul>
-      </nav>
+      <div id="header">
+        <img src="images/logo.svg" alt="Shortly-logo">
+        <nav>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!--starting main content-->
@@ -46,78 +52,89 @@
     </div>
 
     <!--starting container-2-->
+  <div class="middle1">  
     <div class="container-2">
-      <div class="middle">
+      <div class="form">
         <form action="" id="form1">
           <input type="text" placeholder="Shorten a link here.." required>
+          <button id='btn' type="submit"  form="form1"> Shorten It! </button>
           <small id="invalid" style="color: red;">Please add a link</small>
-        </form>
-        <button type="submit"  form="form1"> Shorten It! </button>
+      </form>
       </div>
     </div>
-
+  </div>
     <!--starting container-3-->
-    <div class="container-3">
-      <div class="middle">
-        <h2> Advanced Statistics </h2>
-        <p>
-          Track how your links are performing across the web with our 
-          advanced statistics dashboard.</p>
-      </div>
-    </div>
 
-    <!--starting container-4-->
-    <div class="container-4">
-      <div class="card">
-        <div class="card-1">
-          <img src="images/icon-brand-recognition.svg" alt="Brand Recognition">
-          <h3>Brand Recognition</h3>
-          <p> Boost your brand recognition with each click. Generic links don’t 
-            mean a thing. Branded links help instil confidence in your content.</p>
+    <div class="middle2">
+      <div class="container-3">
+        <div class="about">
+          <h2> Advanced Statistics </h2>
+          <p>
+            Track how your links are performing across the web with our 
+            advanced statistics dashboard.</p>
         </div>
-        <div class="card-2">
-          <img src="images/icon-detailed-records.svg" alt="Detailed Records">
-          <h3>Detailed Records</h3>
-          <p>Gain insights into who is clicking your links. Knowing when and where 
-    people engage with your content helps inform better decisions.</p>
-        </div>
-        <div class="card-3">
-          <img src="images/icon-fully-customizable.svg" alt="Fully Customizable">
-          <h3>Fully Customizable</h3>
-          <p>Improve brand awareness and content discoverability through customizable 
-            links, supercharging audience engagement.</p>
-        </div>
+      </div>
+
+      <!--starting container-4-->
+      <div class="container-4">
+        <div class="card">
+          <div class="card-1">
+            <img src="images/icon-brand-recognition.svg" alt="Brand Recognition">
+            <h3>Brand Recognition</h3>
+            <p> Boost your brand recognition with each click. Generic links don’t 
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+          <!--
+          <div class="hr1"></div>
+          -->
+          <div class="card-2">
+            <img src="images/icon-detailed-records.svg" alt="Detailed Records">
+            <h3>Detailed Records</h3>
+            <p>Gain insights into who is clicking your links. Knowing when and where 
+      people engage with your content helps inform better decisions.</p>
+          </div>
+          <!--
+          <div class="hr2"></div>
+          -->
+          <div class="card-3">
+            <img src="images/icon-fully-customizable.svg" alt="Fully Customizable">
+            <h3>Fully Customizable</h3>
+            <p>Improve brand awareness and content discoverability through customizable 
+              links, supercharging audience engagement.</p>
+          </div>
+       </div>
       </div>
     </div>
 
     <!--starting main content-->
     <div class="container-5">
-      <div class="middle">
+      <div class="boost">
         <h2>Boost your links today </h2>
         <button>Get Started</button>
       </div>
     </div>
 
     <footer>
-     <div>
-       <div>
+     <div class="footer-container">
+       <div class="footer-image">
         <img src="images/logo.svg" alt="logo">
        </div>
-       <div>
+
+       <div class="column-1">
          <h4>Features</h4>
          <p>Link shortening</p>
          <p>Branded List</p>
          <p>Analytics</p>
        </div>
 
-       <div>
+       <div class="column-2">
         <h4>Resources</h4>
         <p>Blog</p>
         <p>Development</p>
         <p>Support</p>
       </div>
 
-      <div>
+      <div class="column-3">
         <h4>Company</h4>
         <p>About</p>
         <p>Out team</p>
@@ -125,7 +142,7 @@
         <p>Contact</p>
       </div>
 
-      <div>
+      <div class="social-icons">
         <img src="images/icon-facebook.svg" alt="icon-facebook">
         <img src="images/icon-twitter.svg" alt="icon-twitter">
         <img src="images/icon-pinterest.svg" alt="icon-pinterest">
@@ -134,7 +151,7 @@
      </div>
       
     </footer>
-  </div>
+  
   
   <!--
   <div class="attribution">
