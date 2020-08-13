@@ -127,8 +127,8 @@ p{
 
 .container-2{ 
      margin:0 5% 0 5%;
-     position: absolute;
-     top: 100%;
+     position: relative;
+     bottom: 5em;
      width: 90%;
      border: 1px solid hsl(257, 27%, 26%);
      border-radius: 10px;
@@ -166,7 +166,29 @@ small{
     visibility: hidden;
 }
 
+.links{
+    visibility: hidden;
+    display: grid;
+    grid-template: 1fr/3fr 0.5fr 0.5fr;
+    font-size: 1em;
+    background-color:#ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    width: 90%;
+    color: black;
+    margin:-5% 5% 0 5%;
+}
 
+.links > div {
+    padding: 0.5em;
+}
+
+.links > button {
+    border: 1px solid hsl(176, 58%, 56%);
+    border-radius: 5px;
+    margin-left: 1em;
+    width: 80%;
+}
 /***************
     Container-3
 ****************/
@@ -185,6 +207,7 @@ small{
 
 .about{
     margin: 12%;
+    margin-top: 4em;
     text-align: center;
 }
 
