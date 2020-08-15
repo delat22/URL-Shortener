@@ -6,6 +6,10 @@ const invalidInput = document.getElementById('invalid');
 const submitButton = document.getElementById('btn');
 const linkSpace = document.querySelector('.links');
 const linksContainer = document.getElementById('links-container');
+const pasteLink = document.querySelector('.paste-link');
+const shortenLink = document.querySelector('.shorten-link');
+
+
 const linksUrl = 'https://rel.ink/api/links/';
 
 submitButton.addEventListener('click', ($event) => {
@@ -13,6 +17,7 @@ submitButton.addEventListener('click', ($event) => {
     invalidInput.style.visibility = 'visible';
     formInput.style.border = '2px solid red';
     linkSpace.style.visibility = 'visible';
+
 
     const post = {
         "url": formInput.value
@@ -45,7 +50,9 @@ function makeRequest(data) {
         const requestPromise = makeRequest(post);
         const response = await requestPromise;
        // "https://rel.ink/" + `${data.hashid}`;
-        linkSpace.textContent = "https://rel.ink/" + response.hashid;
+       shortenLink.textContent = "https://rel.ink/" + response.hashid;
+       pasteLink.textContent = formInput.value;
+    
       }
 
       catch (errorResponse) { 

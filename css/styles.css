@@ -30,6 +30,11 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+    background-color: hsl(179, 56%, 75%);
+    border-color: hsl(179, 56%, 75%);
+}
+
 /***************
     HEADER
 ****************/
@@ -59,31 +64,34 @@ li{
 
 
 li:nth-child(4){
-    position: absolute;
-    left: 80%;
+    position: relative;
+    left: 19em;
 }
 
-li:nth-child(5){
-    position: absolute;
-    left: 87%;
-}
 
 nav>ul>li>a:hover {
     color: hsl(260, 8%, 14%);
 }
 
-li:nth-child(4)>a:hover, li:nth-child(5)>a:hover{
+li:nth-child(5){
+    position: relative;
+    left: 20em;
     color:#ffffff;
     background-color: hsl(176, 58%, 56%);
     border: 5px solid hsl(176, 58%, 56%);
     border-radius: 100px;
-    padding: 0.1em 1em;
+    padding:0.2em 1em;
 }
+
+li:nth-child(5):hover{
+    color:#ffffff;
+}
+
 
 #wrapper{
     
     background-color: #ffffff;
-    z-index: 1;
+  
 }
 
 #header {
@@ -160,6 +168,10 @@ input{
     margin-left: 1em;
 }
 
+#btn:hover{
+    border-color: hsl(179, 56%, 75%);
+}
+
 small{
     display: block;
     padding-top: 0.5em;
@@ -175,12 +187,20 @@ small{
     border: 5px solid #ffffff;
     border-radius: 5px;
     width: 90%;
-    color: black;
+    color: hsl(256, 10%, 21%);
     margin:-5% 5% 0 5%;
 }
 
 .links > div {
     padding: 0.5em;
+}
+
+.paste-link{
+  
+}
+
+.shorten-link {
+    color: hsl(176, 58%, 56%);
 }
 
 .links > button {
