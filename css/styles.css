@@ -397,7 +397,6 @@ RESPONSIVENESS
 
 @media only screen and (max-width: 650px){
 
-
     li:nth-child(4){
         position: relative;
         right: 0;
@@ -439,6 +438,25 @@ RESPONSIVENESS
     #btn{
         margin: 1em 0;
         width: 100%;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+    }
+
+    .links > div, .links > button{
+        margin: 0 auto;
+        margin-bottom: 0.5em;
+        width: 90%;
+    }
+
+    .paste-link{
+        border-bottom: 1px solid hsl(230, 25%, 95%);
+        margin: 0;
+        padding: 0;
     }
 
    .about{
