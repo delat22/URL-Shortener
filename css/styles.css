@@ -170,6 +170,7 @@ input{
     outline: none;
 }
 
+
 #btn{
     width: 20%;
     border: 5px solid hsl(176, 58%, 56%);
@@ -187,6 +188,11 @@ small{
     visibility: hidden;
 }
 
+#list-container{
+   display: flex;
+   flex-direction: column;
+}
+
 .links{
     visibility: hidden;
     display: grid;
@@ -197,7 +203,7 @@ small{
     border-radius: 5px;
     width: 90%;
     color: hsl(256, 10%, 21%);
-    margin:-5% 5% 0 5%;
+    margin:-3em 5% 0 5%;
 }
 
 .links > div {
@@ -218,6 +224,8 @@ small{
     margin-left: 1em;
     width: 80%;
 }
+
+
 /***************
     Container-3
 ****************/
@@ -387,9 +395,21 @@ RESPONSIVENESS
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 650px){
 
 
+    li:nth-child(4){
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+
+    li:nth-child(5){
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: 0;
+    }
 
     .container-1 {
         flex-direction: column-reverse;
