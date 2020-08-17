@@ -83,6 +83,8 @@ function makeRequest(data) {
 
 
 function validateForm(){
+
+ 
   if (!formInput.value) {
     invalidInput.style.visibility = 'visible';
     formInput.style.border = '3px solid red';
@@ -92,6 +94,7 @@ function validateForm(){
     invalidInput.style.visibility = 'hidden';
     formInput.style.borderColor = '#ffffff'
     linkSpace.style.visibility = 'visible';
+   
   }
 /***
   let listItem = document.createElement("div");
@@ -124,6 +127,9 @@ function validateForm(){
 
   linksContainer.appendChild(containerList);
   */
+
+  
+
 }
 
 

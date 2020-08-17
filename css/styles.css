@@ -297,6 +297,7 @@ small{
     padding: 1em;
     padding-top: 1em;
     margin-bottom: 50%;
+    box-shadow: 0 0 6px hsl(0, 0%, 100%);
 }
 
 .card-2{
@@ -320,23 +321,10 @@ small{
     border-radius: 50%;
 }
 
-/***
-.hr1{
-    position: absolute;
-    left: 34.5%;
-    top: 180%;
-    border-top: 5px solid hsl(176, 58%, 56%);
-    width: 2em;
-}
 
-.hr2{
-    position: absolute;
-    right: 31.9%;
-    top: 180%;
-    border-top: 5px solid hsl(176, 58%, 56%);
-    width: 2em;
-}
-****/
+
+
+
 
 
 /***************
@@ -392,6 +380,8 @@ footer > .footer-container > div > p {
 }
 
 .social-icons{
+    margin: 1em;
+    word-spacing: 1em;
     margin-top: 3.5em;
 }
 
@@ -481,6 +471,7 @@ RESPONSIVENESS
     }
 
     .container-1 {
+        margin: 0;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
