@@ -48,6 +48,7 @@ button:hover {
 header{
     margin-left: 5%;
     margin-top: 2%;
+    
 }
 
 ul{
@@ -58,6 +59,7 @@ ul{
 nav a {
    text-decoration: none; 
    color: hsl(257, 7%, 63%);
+   
 }
 
 
@@ -547,6 +549,7 @@ RESPONSIVENESS
     }
 
     .footer-container{
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
