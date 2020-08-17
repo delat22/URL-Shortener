@@ -10,6 +10,7 @@ const pasteLink = document.querySelector('.paste-link');
 const shortenLink = document.querySelector('.shorten-link');
 const copyButton = document.querySelector('#copy');
 
+
 const linksUrl = 'https://rel.ink/api/links/';
 
 
@@ -103,7 +104,7 @@ function validateForm(){
   linksContainer.appendChild(listItem)
   ****/
 
-  /**
+  /** 
   let containerList = document.createElement('div');
   
   containerList.setAttribute("class", "links");
@@ -149,4 +150,16 @@ function copyToClipboard(){
         }
 
         document.body.removeChild(copiedElement);
+}
+
+
+//toggle Menu
+function menu() {
+  let toggleMenu = document.getElementById("toggle-nav");
+  if (toggleMenu.style.display === "block" ) {
+    toggleMenu.style.display = "none";
+  } else {
+    toggleMenu.style.display = "block";
+    
+  }
 }

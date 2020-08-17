@@ -80,6 +80,8 @@ nav>ul>li>a:hover {
     color: hsl(260, 8%, 14%);
 }
 
+
+
 li:nth-child(5){
     position: absolute;
     left: 80%;
@@ -111,6 +113,20 @@ p{
     color: hsl(257, 7%, 63%);
 }
 
+a.icon{
+    display: none;
+}
+
+
+#toggle-nav{
+    visibility: hidden;
+    margin: 0;  
+    padding: 0;
+}
+
+.hide-nav{
+    display: none;
+}
 
 /***************
     Container 1
@@ -397,6 +413,60 @@ RESPONSIVENESS
 
 @media only screen and (max-width: 650px){
 
+    /*styling toggle menu*/
+    nav > #myLinks {
+        display: none;
+      }
+
+    a.icon {
+        color: hsl(257, 7%, 63%);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0.7em 0.8em 0 0;
+        font-size: 2em;
+    
+    }  
+
+    a {
+        text-decoration: none; 
+        color: hsl(0, 0%, 100%);;
+    }
+
+    .logo {
+        margin-top: 1.1em;
+    }
+
+    #toggle-nav {
+        position: absolute;
+        top: 0;
+        background-color: hsl(257, 27%, 26%);
+        border: 1px solid hsl(257, 27%, 26%);
+        border-radius: 10px;
+        width: 90%;
+        padding: 1em;
+        margin: 0;
+        margin-right: 7%;
+        margin-top: 5em;
+        visibility: visible;
+    }
+
+    #toggle-nav > div {
+        margin: 2em;
+    }
+
+    #toggle-nav > div:nth-child(4){
+        border-bottom: 1px solid hsl(258, 16%, 31%);
+    }
+
+    #toggle-nav > div:nth-child(6){
+        border: 1px solid hsl(176, 58%, 56%);
+        border-radius: 20px;
+        background-color: hsl(176, 58%, 56%);
+        padding: 0.5em 1em;
+    }
+
     li:nth-child(4){
         position: relative;
         right: 0;
@@ -495,4 +565,17 @@ RESPONSIVENESS
 
     
 
+}
+
+@media only screen and (max-width: 500px){
+
+    html{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 382px){
+    .container-1 > .left{
+        margin-top: 4em;
+    }
 }
