@@ -188,6 +188,11 @@ input{
     outline: none;
 }
 
+input:focus{
+    border: 5px solid hsl(257, 27%, 26%);
+    box-shadow: 0 0 6px hsl(257, 27%, 26%);
+}
+
 
 #btn{
     width: 20%;
@@ -228,9 +233,6 @@ small{
     padding: 0.5em;
 }
 
-.paste-link{
-  
-}
 
 .shorten-link {
     color: hsl(176, 58%, 56%);
@@ -377,9 +379,6 @@ h4{
     color: #ffffff;
 }
 
-footer > .footer-container > div > p {
-    
-}
 
 .social-icons{
     margin: 1em;
@@ -387,6 +386,8 @@ footer > .footer-container > div > p {
     margin-top: 3.5em;
 }
 
+.attribution { font-size: 14px; text-align: center; padding: 2em; margin-top: 2em; color: hsl(228, 45%, 44%); font-size: 1em;}
+.attribution a { color: hsl(176, 58%, 56%); text-decoration: none;}
 
 /**********************
 RESPONSIVENESS

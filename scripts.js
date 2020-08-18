@@ -87,7 +87,8 @@ function validateForm(){
  
   if (!formInput.value) {
     invalidInput.style.visibility = 'visible';
-    formInput.style.border = '3px solid red';
+    formInput.style.border = '5px solid #FF0513';
+    formInput.style.boxShadow = '0 0 6px #FF0513';
   }
 
   else{
